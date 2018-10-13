@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="anExternal.css">
+    <h1>Introduction to CSS</h1>
+    </head>
+    <picture>
+            <source srcset="ocean.jpg" media="(max-width: 400px)">
+            <source srcset="ocean.jpg">
+            <img src="ocean.jpg" alt="ocean" style="width:100px;margin:20px">
+    </picture>
+    <p>A. This is a picture with 20px margin on each side!</p>
+
+    <body>
+            <style>
+                p.a 
+                {font-family: "Times New Roman", Times, serif;}
+                p.b 
+                {font-family: Arial, Helvetica, sans-serif;}
+            </style>
+            <p class="a"> I like this font.Today is Friday!!!
+            <p class="b"> Font No.2! This font is boring. But everything on google doc is always in this font.   
+            </p>
+            </body>
+        
+            
+            <style>
+                 p.dotted {border-style: dotted;}
+            </style>
+            <body>
+            <p class="dotted">Look at me!!!!! Dotted line border!</p>
+            </body>
+    
+
+
+            <body>
+                    <img src="IMG-0799.jpg" style="height:50px;width:50px;"/>
+                    <img src="ATotoro.jpg" style="height:50px;width:50px;"/>
+            </body>
+            <p>Two resized 50px pics!</p>
+
+            <body>
+                    <style>
+                    #rcorners2 {
+                    border-radius: 25px;
+                    border: 2px solid #73AD21;
+                    padding: 20px; 
+                    width: 200px;
+                    height: 150px;    
+                    }
+                    </style>
+                    <p id="rcorners2">Rounded corners!</p>
+                    </body>
+
+                    <style>
+                            .container {
+                            position: relative;
+                            text-align: center;
+                            color: black;
+                            }
+                            .centered {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            }   
+                    </style>
+                    <body>
+                            <div class="container">
+                                <img src="Back.jpg" alt="Back" style="width:100%;">
+                            
+                            <div class="centered">The view is beautiful!</div>
+                            </div>
+                    </body>
+                  
+                    <style>
+                            * {
+                                box-sizing: border-box;
+                            }
+                            
+                            .img-container {
+                                float: left;
+                                width: 33.33%;
+                                padding: 5px;
+                            }
+                            
+                            .clearfix::after {
+                                content: "";
+                                clear: both;
+                                display: table;
+                            }
+                            </style>
+                            </head>
+                            <body>
+                            
+                            <h2>Images Side by Side</h2>
+                            <p>Float images side by side:</p>
+                            
+                            <div class="clearfix">
+                              <div class="img-container">
+                                <img src="111.jpg" alt="Italy" style="width:100%">
+                              </div>
+                              <div class="img-container">
+                                <img src="222.jpg" alt="Forest" style="width:100%">
+                              </div>
+                              <div class="img-container">
+                                <img src="333.jpg" alt="Mountains" style="width:100%">
+                              </div>
+                            </div>
+                    </body>
+                    
+</html>
